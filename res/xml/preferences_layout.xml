@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/data" >
+        <Preference
+            android:key="@string/preference_local_path"
+            android:title="@string/set_local_folder" />
+        <Preference
+            android:key="@string/preference_cloud_path"
+            android:title="@string/set_cloud_folder" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sync" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/preference_active"
+            android:title="@string/active" />
+
+        <ListPreference
+            android:dialogTitle="@string/direct_of_sync"
+            android:entries="@array/directions"
+            android:entryValues="@array/diretions_values"
+            android:key="@string/preference_direction"
+            android:title="@string/direction_of_sync" />
+        <ListPreference
+            android:dialogTitle="@string/frequency_of_sync"
+            android:entries="@array/frequency_options"
+            android:entryValues="@array/frequency_options_values"
+            android:key="@string/preference_frequency"
+            android:title="@string/frequency_of_sync" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

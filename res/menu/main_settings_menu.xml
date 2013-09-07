@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings">
+        <menu>
+            <group android:id="@+id/group2">
+        <item android:id="@+id/item3" android:title="opcja 11" android:checked="true" android:visible="true" android:enabled="true" android:checkable="true"></item>
+        <item android:id="@+id/item4" android:title="opcja 12"></item>
+        <item android:id="@+id/item5" android:title="opcja 13"></item>
+    </group><group android:id="@+id/group3">
+        <item android:id="@+id/item1" android:title="opcja 32"/>
+    </group>
+            <item android:id="@+id/item6" android:checkable="true"/>
+        </menu>
+        <menu>
+            <group android:id="@+id/group1">
+                <item android:id="@+id/item2"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>

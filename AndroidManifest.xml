@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jaje.cloudfullsync"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.jaje.cloudfullsync.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/GeneralNoTitle" >
+        <activity
+            android:name="com.jaje.cloudfullsync.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jaje.cloudfullsync.fileexplorer.FileExplorerActivity"
+            android:label="@string/title_file_explorer_activity" >
+        </activity>
+        <activity
+            android:name="com.jaje.cloudfullsync.fileexplorer.SelectFolderActivity"
+            android:label="@string/title_select_file_activity" >
+        </activity>
+        <activity
+            android:name="com.jaje.cloudfullsync.fileexplorer.SelectFileActivity"
+            android:label="@string/title_select_file_activity" >
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.jaje.cloudfullsync.binding.BindingActivity"
+            android:label="@string/title_activity_binding"
+            android:parentActivityName="android.app.ListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.ListActivity" />
+        </activity>
+        <activity
+            android:name="com.jaje.cloudfullsync.binding.BindingPreferences"
+            android:label="@string/title_binding_preference" >
+        </activity>
+        <activity
+            android:name="com.jaje.cloudfullsync.binding.AddBindingActivity"
+            android:label="@string/title_activity_add_binding" >
+        </activity>
+    </application>
+
+</manifest>

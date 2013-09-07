@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="wrap_content" 
+  android:orientation="vertical" 
+  android:layout_width="fill_parent">
+  
+<ImageView
+    android:id="@+id/preview"
+    android:layout_width="50dip"
+    android:layout_height="50dip" 
+    android:contentDescription="@string/preview">
+</ImageView>
+               
+<TextView android:text="@string/fileName"
+    android:id="@+id/fileName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:textStyle="bold"
+    android:layout_toRightOf="@+id/preview"
+    android:layout_marginTop="5dip" 
+    android:layout_marginLeft="5dip">
+</TextView>
+<TextView android:text="@string/count"
+    android:id="@+id/count"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/preview"
+    android:layout_below="@+id/fileName"
+    android:layout_marginLeft="10dip">
+   
+</TextView>
+<TextView android:text="@string/TextViewDate"
+    android:id="@+id/TextViewDate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/fileName"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="5dip">
+</TextView>
+</RelativeLayout>

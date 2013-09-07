@@ -1,0 +1,3 @@
+Projekt w zamyśle ma być uniwersalnym klientem dysków w chmurze, początkowo trzech: Dropbox, Google Drive oraz Skydrive.
+Powstał jako aplikacja do regularnego dwustronnego synchronizowania plików (na bieżąco, oficjalne klienty pobierają pliki tylko na życzenie) oraz przeglądania tych plików.
+Na chwilę obecną powstała część do przeglądania plików.

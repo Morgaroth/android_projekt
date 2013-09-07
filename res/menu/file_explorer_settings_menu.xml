@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/newdir"
+        android:icon="@drawable/newfolder"
+        android:title="@string/creating_new_folder"
+        android:titleCondensed="@string/new_folder">
+    </item>
+    <item
+        android:id="@+id/newfile"
+        android:icon="@drawable/newfile"
+        android:title="@string/creating_new_file"
+        android:titleCondensed="@string/new_file">
+    </item>
+
+</menu>

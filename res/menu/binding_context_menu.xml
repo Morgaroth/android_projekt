@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+binding_context_menu/edit"
+        android:menuCategory="container"
+        android:orderInCategory="1"
+        android:title="@string/edit">
+    </item>
+    <item
+        android:id="@+binding_context_menu/de.activate"
+        android:menuCategory="container"
+        android:orderInCategory="2"
+        android:title="@string/deactivate">
+    </item>
+    <item
+        android:id="@+binding_context_menu/del"
+        android:menuCategory="container"
+        android:orderInCategory="3"
+        android:title="@string/delete">
+    </item>
+
+</menu>
