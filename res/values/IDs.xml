@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="admobID">a151dc70aa7b79b</string>
-	<item name="selectMenuItem" type="id"></item>
+    <string name="admobID">a15255075a2bea4</string>
+
+    <item name="selectMenuItem" type="id"></item>
+
 </resources>

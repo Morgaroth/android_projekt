@@ -33,7 +33,7 @@
     <string name="select">Select</string>
     <string name="deleting_">Deleting&#8230;</string>
     <string name="cannot_rename">Cannot rename</string>
-    <string name="are_you_sure_to_delete">"Are You sure to delete?"</string>
+    <string name="are_you_sure_to_delete">"Are You sure to delete"</string>
     <string name="renaming_">Renaming&#8230;</string>
     <string name="type_new_name">Type new name:</string>
     <string name="do_not_go_up">Do not go up, it\'s root of directory tree.</string>

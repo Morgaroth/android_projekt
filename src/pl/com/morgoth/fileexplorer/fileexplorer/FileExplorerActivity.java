@@ -291,8 +291,8 @@ public class FileExplorerActivity extends ListActivity implements MenuItem.OnMen
 		MyDialogs.Confirm.show(
 				FileExplorerActivity.this,
 				getString(R.string.deleting_),
-				new StringBuilder(getString(R.string.are_you_sure_to_delete)).append(
-						fileToDelete.getName()).toString(), R.string.yes,
+				new StringBuilder(getString(R.string.are_you_sure_to_delete)).append(" ")
+						.append(fileToDelete.getName()).append("?").toString(), R.string.yes,
 				new DialogInterface.OnClickListener() {
 					@Override
 					public void onClick(DialogInterface dialog, int whichButton) {
@@ -313,7 +313,7 @@ public class FileExplorerActivity extends ListActivity implements MenuItem.OnMen
 							return;
 						}
 						File newFile = new File(currentPath, newNameFromInput);
-						if (fileToRename.renameTo(newFile)) {
+						if (!fileToRename.renameTo(newFile)) {
 							MyDialogs.Info.show(
 									FileExplorerActivity.this,
 									"Unable rename",

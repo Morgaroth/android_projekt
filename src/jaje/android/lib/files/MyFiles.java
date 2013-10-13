@@ -9,7 +9,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class MyFiles {
-	
+
 	public static boolean delete(File dir) {
 		if (dir.isDirectory()) {
 			File[] children = dir.listFiles();
@@ -23,11 +23,9 @@ public class MyFiles {
 		return dir.delete();
 	}
 
-	public static boolean copyDir(File source, File destination,
-			boolean overwriteExisting) {
+	public static boolean copyDir(File source, File destination, boolean overwriteExisting) {
 		if (source.exists() && source.isDirectory()) {
 			destination.mkdirs();
-			System.out.println("copying dir "+source.getPath()+" to "+destination.getPath());
 			for (File f : source.listFiles()) {
 				File dest = new File(new StringBuilder(destination.getPath())
 						.append(File.separator).append(f.getName()).toString());
@@ -47,13 +45,11 @@ public class MyFiles {
 		}
 	}
 
-	public static boolean copyFile(File source, File destination,
-			boolean overwriteExisting) {
+	public static boolean copyFile(File source, File destination, boolean overwriteExisting) {
 		boolean result;
 		boolean sourceCond = source.exists() && source.isFile();
 		boolean destCond = destination.exists() ? overwriteExisting : true;
 		if (sourceCond && destCond) {
-			System.out.println("copying file "+source.getPath()+" to "+destination.getPath());
 			try {
 				InputStream in = new FileInputStream(source);
 				try {
